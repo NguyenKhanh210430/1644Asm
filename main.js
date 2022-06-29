@@ -10,7 +10,7 @@ app.use(express.urlencoded({extended:true}))
 var MongoClient = require('mongodb').MongoClient
 var url = 'mongodb+srv://GCH200087:gch200087@cluster0.tkcln.mongodb.net/?retryWrites=true&w=majority'
 
-const PORT = process.env.PORT || 8000
+const PORT = process.env.PORT || 7000
 app.listen(PORT)
 console.log("Server is running")
 //////////////////////////////////////////////////////////////////////////////////////////////////
