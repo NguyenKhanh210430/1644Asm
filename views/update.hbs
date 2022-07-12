@@ -32,7 +32,8 @@
 
 <body>
    <div class="container">
-  <form action="/NewProduct" method="post">
+  <form action="/updateProduct" method="post">
+  <input type="hidden" name="_id" value="{{products._id}}">
     <div class="form-group">
       <label for="name">Name:</label>
       <input type="text" class="form-control" id="name" placeholder="Enter email" name="txtName" value="{{products.name}}">

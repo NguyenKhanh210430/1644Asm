@@ -59,7 +59,9 @@ app.post('/NewProduct',async (req,res)=>{
         res.render('/')
     }
     res.redirect('/viewAll')
+    
 })
+
 
 // All product
 app.get('/viewAll',async (req,res)=>{
@@ -91,13 +93,13 @@ app.post('/updateProduct', async(req,res)=>{
     let dbo = client.db("ATNTOY")
     console.log(id)
     await dbo.collection("TOY").updateOne({_id: ObjectId(id)}, {
-        $set: {
-            'name':name,
-            'price': price,
-            'picURL':picURL,
-            'description': description,
-            'amount': amount
-        }
+         $set: {
+             'name': name,
+             'price': price,
+             'picURL': picURL,
+             'description': description,
+             'amount': amount
+         }
     })
     res.redirect('/viewAll')
 })
