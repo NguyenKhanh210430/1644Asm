@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Toy Management</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+
+<header >
+  <h1 style="text-align:center"><b><strong>Toy Management</strong></b></h1>
+   <nav>
+  <div>
+    <ul class="nav navbar-nav">
+      <li><a href="/create" type="button" class="btn btn-danger btn-sm" style="font-size: 15px; padding: 10px">Add New Toy</a></li>
+    </ul>
+    </ul>
+  </div>
+</nav>
+</header>
+
+<body>
+    <table class="table table-bordered border-bold">
+        <thead class="thead-dark">
+            <tr class="table-primary border-info-bold" style="font-size: 20px; background-color: rgb(0, 0, 0); color: whitesmoke">
+                <th style="text-align:center" scope="col">Toy Name</th>
+                <th style="text-align:center" scope="col">Price</th>
+                <th style="text-align:center" scope="col">Type</th>
+                <th style="text-align:center" scope="col">Review</th>
+                <th style="text-align:center" scope="col">Publication Year</th>
+                <th style="text-align:center" scope="col">Actions</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {{#each toys}}
+                <tr style="font-size: 20px; color: rgb(255, 255, 255); background-color: black"></tr>
+                    <td style="text-align:center; padding-top: 20px; font-size: 25px; ">{{toyname}}</td>
+                    <td style="text-align:center; padding-top: 20px; font-size: 25px;">{{toyprice}}</td>
+                    <td style="text-align:center; padding-top: 20px; font-size: 25px;">{{toytype}}</td>
+                    <td style="text-align:center; padding-top: 20px; font-size: 25px;">{{toyreview}}</td>
+                    <td style="text-align:center; padding-top: 20px; font-size: 25px;">{{toypublicationyear}}</td>
+                    <td style="text-align:center; padding-top: 20px; font-size: 25px;">
+                        <a href="/update?id={{{_id}}}" type="button" class="btn btn-success btn-sm" style="font-size: 15px; padding: 10px"
+                        ><b>Edit</b></a>
+                        <a href="/delete?id={{_id}}"  onclick="return confirm('Delete toy: {{toyname}}')" 
+                        type="button" class="btn btn-danger btn-sm" style="font-size: 15px; padding: 10px">
+                        <b>Delete</b></a> 
+                    </td>
+                </tr>
+            {{/each}}
+        </tbody>
+
+    </table>
+</body>
+
+<footer>
+    
+</footer>
+
+</html>

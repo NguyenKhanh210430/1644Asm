@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<header>
+<h1 style="text-align:center"><b><strong>Add New Toy</strong></b></h1>
+</header>
+
+<body>
+    <div class="container">
+  <form action="/NewToy" method="post">
+    <div class="form-group">
+      <label for="toyname">Toy Name:</label>
+      <input type="text" class="form-control" id="toyname" placeholder="Enter Name" name="txtName">
+    </div>
+    <div class="form-group">
+      <label for="toyprice">Price:</label>
+      <input type="number" class="form-control" id="toyprice" placeholder="Enter Price" name="txtPrice">
+    </div>
+    <div class="form-group">
+      <label for="toytype">Type:</label>
+      <input type="text" class="form-control" id="toytype" placeholder="Enter Type" name="txtType">
+    </div>
+    <div class="form-group">
+      <label for="toyreview">Review:</label>
+      <input type="text" class="form-control" id="toyreview" placeholder="Enter Review" name="txtReview">
+    </div>
+    <div class="form-group">
+      <label for="toypublicationyear">Publication Year:</label>
+      <input type="number" class="form-control" id="toypublicationyear" placeholder="Enter Publication Year" name="txtPublicationyear">
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+    <button class="btn btn-default" onclick="history.back()">Go Back</button>
+  </form>
+</div>
+</body>
+</html>

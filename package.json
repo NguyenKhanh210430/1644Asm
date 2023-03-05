@@ -2,21 +2,21 @@
   "name": "asm1644_atntoys",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node main"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KhanhGCH200087/asm1644_ATNToys.git"
+    "url": "git+https://github.com/NguyenKhanh210430/Asm1644"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/KhanhGCH200087/asm1644_ATNToys/issues"
+    "url": "https://github.com/NguyenKhanh210430/Asm1644/issues"
   },
-  "homepage": "https://github.com/KhanhGCH200087/asm1644_ATNToys#readme",
+  "homepage": "https://github.com/NguyenKhanh210430/Asm1644",
   "dependencies": {
     "express": "^4.18.2",
     "express-session": "^1.17.3",
