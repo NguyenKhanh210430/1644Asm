@@ -16,7 +16,7 @@ console.log("Server is running")
 
 // Index page
 app.get('/', (req,res) =>{
-    res.render('AllToys')
+    res.render('ViewAll')
 })
 
 // Add toy
