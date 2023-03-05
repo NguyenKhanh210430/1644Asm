@@ -14,6 +14,11 @@ const PORT = process.env.PORT || 1707
 app.listen(PORT)
 console.log("Server is running")
 
+// Index page
+app.get('/', (req,res) =>{
+    res.render('home')
+})
+
 // Add toy
 app.get('/create',(req,res)=>{
     res.render('NewToy')
